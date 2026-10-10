@@ -5,12 +5,61 @@ body {
 
 .navbar {
   display: flex;
+  background-color: white;
   list-style: none;
   padding: 0;
   flex-direction: row;
   justify-content: space-around;
-  height: 100px;
+  height: 40px;
   align-items: center;
   gap: 1px 5px;
+  cursor: pointer;
+  transition: all 1s;
+}
 
+li{
+  padding: 0.1em;
+}
+
+li a {
+  padding: 0.2em 0.5em;
+  text-decoration: none;
+  /* border: 1px solid; */
+  margin: 30px;  
+}
+
+button { 
+  color: black;
+  background-color: white;
+  padding: 0.5em;
+  font-size: 1rem;
+  border-radius: 2.5px;
+  border: 0.5px solid black;
+  cursor: pointer;
+  transition: all 1s;
+}
+button:hover, button:focus {
+  background-color: rgb(57, 214, 135);
+} 
+button:active {
+  background-color: red; 
+}
+
+img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.card {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px
+}
+.card {
+  width: 30%;
+  background-color: tan;
+  padding: 0.5em;
+  
 }
