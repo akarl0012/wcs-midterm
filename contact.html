@@ -35,6 +35,56 @@
     </nav>
 <hr> 
 <main id="main">
+    <form action="result.html" method="GET">
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" required placeholder="Firstname">
+        </div>
+        <div> 
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="q">Question</label>
+            <textarea name="question" id="q"></textarea>
+        </div>
+        <div>
+            <label for="pgm">Contacts</label>
+            <select name="program" id="pgm">
+                <option value="imm">Studio General</option>
+                <option value="imm">Media Manager</option>
+                <option value="imm">Head Recruiter</option>
+                <option value="gd">Head Distributer</option>
+            </select>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Would you like a reply?</legend>
+                
+                <label for="y">Yes</label>
+                <input type="radio" id="y" name="yes">
+
+                <label for="n">No</label>
+                <input type="radio" id="n" name="no">
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Email Correct</legend>
+                
+                <label for="y2">Yes</label>
+                <input type="radio" id="y2" name="email" value="yes">
+
+                <label for="n2">No</label>
+                <input type="radio" id="n2" name="email" value="no">
+
+            </fieldset>
+        </div>
+
+        <div>
+            <button type="submit">Send</button>
+        </div>
+    </form>
 
 </main>
 <hr>
