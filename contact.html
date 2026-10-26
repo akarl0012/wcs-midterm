@@ -20,7 +20,18 @@
     .table > *{
         border: 3px solid black;
     }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+        }
 
+        form div {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
   </style>
 </head>
     <a href="#main" class="skip-link">Skip to body</a>
@@ -30,7 +41,7 @@
             <h1>M.A.N.A. Studio Contact Info</h1>
         </header>
         <nav>
-<hr>
+
     <nav>
          <ul class="navbar">
             <!-- Still an issue going back to index/home page. ask about issue  -->
@@ -61,7 +72,7 @@
                 <option value="gd">Head Design</option>
             </select>
         </div>
-        <div>
+        <!-- <div>
             <fieldset>
                 <legend>Would you like a reply?</legend>
                 
@@ -71,16 +82,16 @@
                 <label for="n">No</label>
                 <input type="radio" id="n" name="no">
             </fieldset>
-        </div>
+        </div> -->
         <div>
             <fieldset>
                 <legend>Email Correct</legend>
                 
                 <label for="y2">Yes</label>
-                <input type="radio" id="y2" name="email" value="yes">
+                <input type="radio" id="y2" name="email-correct" value="yes">
 
                 <label for="n2">No</label>
-                <input type="radio" id="n2" name="email" value="no">
+                <input type="radio" id="n2" name="email-correct" value="no">
 
             </fieldset>
         </div>
@@ -101,28 +112,28 @@
         </thead>
         <tbody>
             <tr>
-                <td scope="row">Studio General</td>
+                <th scope="row">Studio General</th>
                 <td>010</td>
                 <td>MANAstudio@fakeemail.com</td>
             </tr>
             <tr>
-                <td scope="row">Media Manager</td>
+                <th scope="row">Media Manager</th>
                 <td>020</td>
                 <td>MM_MANAstudio@fakeemail.com</td>
             </tr>
             <tr>
-                <td scope="row">Head Recruiter</td>
+                <th scope="row">Head Recruiter</th>
                 <td>030</td>
                 <td>HR_MANAstudio@fakeemail.com</td>
             </tr>
              <tr>
-                <td scope="row">Head Design</td>
+                <th scope="row">Head Design</th>
                 <td>040</td>
                 <td>HD_MANAstudio@fakeemail.com</td>
             </tr>
         </tbody>
         <tfoot>
-            <td colspan="4">Responses may take between 1 to 3 bussiness days.</td>
+            <td colspan="3">Responses may take between 1 to 3 bussiness days.</td>
         </tfoot>
     </table>
 </main>
