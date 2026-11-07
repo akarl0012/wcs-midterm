@@ -8,3 +8,11 @@ October - added the week 6 and 7 lessons into the file. Checking over with light
 contact information to the contact page. 
 Everything seems to be in order for the Midterm regarding the Web Components aspect of the Midterm. 
 Nove-05 adding Skip -links to each page as per assignment request. 
+Nov 07 - Added the following to the html cards to the different main tags so they can be grabbed individually. 
+For CSS 
+- added the skip links to the CSS. Previously they were in HTMLs but were compeating with the styles page. 
+They were added to the Styles page. 
+- combined the  Header and Footer navigations together and added the boarder so that it compresses with mobile and screen 
+resizing. 
+- combined all the Classes to the same style group.
+- added the Media Queries for both Computer and larger Mobile and Tablets. 
