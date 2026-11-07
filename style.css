@@ -18,7 +18,7 @@ img {
   border-radius: 10px;
 }
 
-/* Navigation Bar display and alignments  */
+/* Navigation Bar display and alignments for Header and Footer */
 .h-navbar{
   display: flex;
   list-style: none;
@@ -30,6 +30,16 @@ img {
   gap: 2px 10px
 }
 
+.f-navbar{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  gap: 2px 10px
+}
 li{
   
   padding: 0.5em; 
@@ -37,16 +47,22 @@ li{
 
 li a {
   padding: 0.5em 2em;
-  text-decoration: none; 
-  background-color: yellow; 
+  text-decoration: underline; 
+  background-color: ""; 
 }
 
-
+/* Main body information and styles for the cards  */
 .card {
   width: 100%;
   height: auto;
   border-radius: 20px;
   width: 30%;
-  background-color: pink;
+  background-color: rgb(186, 163, 115);
   padding: 0.5em;
+}
+
+p {
+  padding: 1em;
+  font-size: 1.25rem;
+  margin: center;
 }
