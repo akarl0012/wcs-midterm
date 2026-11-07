@@ -136,7 +136,8 @@ p {
   }
 }
 
-/* This works but does not meet the requirements of the assignment. Trying again but keeping the OG code  */
+/* This works but does not meet the requirements of the assignment. 
+Trying again but keeping the OG code for refrence */
 /* For the desktops with at least 1024px = 64rem
 @media (min-width: 64rem) {
   .designs {
