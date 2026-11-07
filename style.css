@@ -46,14 +46,17 @@ body { font-family: Arial, Helvetica, sans-serif; color: #333333; background: #f
 .h-navbar, .f-navbar {
   display: flex;
   list-style: none;
-  padding: 0;
-  flex-direction: row;
+  padding: 10px 0;
+  flex-direction: column;
   justify-content: space-around;
-  height: 100px;
+  height: auto;
   align-items: center;
   gap: 2px 10px
   cursor: pointer;
   transition: all 1s;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 100%;
 }
 
 li{
@@ -88,10 +91,9 @@ button:active {
 
 
 .card {
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 20px;
-  width: 30%;
   background-color: rgb(186, 163, 115);
   padding: 0.5em; 
 }
@@ -102,9 +104,33 @@ p {
   text-align: center;
 }
 
-.chars {
+.designs {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  padding: 0 15px;
+}
+
+/* Media Queries for the desktop and for larger phones and tablets  */
+@media (min-width: 768px) {
+  .h-navbar, .f-navbar {
+    flex-direction: row; 
+    justify-content: space-around;
+    height: 100px;
+  }
+}
+
+/* For the desktops with at least 1024px  */
+@media (min-width: 1024px) {
+  .designs {
+    flex-direction: row; 
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .card {
+    width: 45%; 
+  }
 }
