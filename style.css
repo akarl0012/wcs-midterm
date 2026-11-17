@@ -21,11 +21,19 @@ html {
 /* week 11 assignement  */
 :root {
   --brandcol: #333333;
-  --brandcol: 
+  --brandcol: ;
+  --font-body: Arial, Helvetica, sans-serif;
+
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+
+  --radius: 8px;
+  --border: 1px solid
 }
 
 body { 
-  font-family: Arial, Helvetica, sans-serif; 
+  font-family: var(--font-body); 
   font-size: 1rem;
   line-height: 1.6;
   color: #333333; 
@@ -139,10 +147,10 @@ button:active {
   background-color: rgb(186, 163, 115);
   padding: 0.5em; 
   transition: transform0.3s ease, box-shadow 0.3s ease;
-}
-&:hover {
+  &:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2)
+ }
 }
 
 p {

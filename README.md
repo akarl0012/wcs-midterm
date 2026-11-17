@@ -16,3 +16,6 @@ They were added to the Styles page.
 resizing. 
 - combined all the Classes to the same style group.
 - added the Media Queries for both Computer and larger Mobile and Tablets. 
+Week 11 Components and Styles: 
+- attepmt at using &:hover in place of card did not work. 
+- 
