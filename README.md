@@ -17,5 +17,6 @@ resizing.
 - combined all the Classes to the same style group.
 - added the Media Queries for both Computer and larger Mobile and Tablets. 
 Week 11 Components and Styles: 
-- attepmt at using &:hover in place of card did not work. 
-- 
+- added a Root sequence to the CSS
+- added a Dark Mode to the CSS (took a long time)
+- going through and nesting button and card for website simplisity

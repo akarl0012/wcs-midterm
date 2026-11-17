@@ -3,6 +3,44 @@
    - Tagline (#77670D) on Background (#ffffff) -> Contrast ratio: 5.4:1 - Passed
    - Card Text (#333333) on Card Background (#BAA373) -> Contrast ratio: 8.2:1 - Passed */
 
+   /* week 11 assignement  */
+:root {
+  --color-text: #333333;
+  --color-bg: white ;
+  --color-tagline: #77670D;
+  --color-card-bg: rgb(186, 163, 115);
+  --color-card-text:#333333;
+  --color-button-bg: #ffffff;
+  --color-button-text: #000000;
+  --color-focus: #1d4ed8;
+  --color-border: #000000;
+  
+  --font-body: Arial, Helvetica, sans-serif;
+
+  ---space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+
+  --radius: 8px;
+  --border: 1px solid
+}
+
+/* Dark Theme Mode  */
+@media(prefers-color-scheme: dark) {
+  :root {
+    --color-text: #121212;
+    --color-bg: #f0f0f0 ;
+    --color-tagline: #d4af37;
+    --color-card-bg: #2d281e;
+    --color-card-text:#f0f0f0;
+    --color-button-bg: #1e1e1e;
+    --color-button-text: #ffffff;
+    --color-focus: #60a5fa;
+    --color-border: #f0f0f0;
+  }
+}
 
 html {
   height: 100%;
@@ -15,33 +53,20 @@ html {
 /* accessibility styles  */
 
 :focus-visible {
-  border: rgb(15, 15, 195) 10px border;
-}
-
-/* week 11 assignement  */
-:root {
-  --brandcol: #333333;
-  --brandcol: ;
-  --font-body: Arial, Helvetica, sans-serif;
-
-  --space-sm: 0.5rem;
-  --space-md: 1rem;
-  --space-lg: 2rem;
-
-  --radius: 8px;
-  --border: 1px solid
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
 }
 
 body { 
   font-family: var(--font-body); 
   font-size: 1rem;
   line-height: 1.6;
-  color: #333333; 
-  background: #ffffff; 
+  color: var(--color-text); 
+  background: var(--color-bg); 
   margin: 0;
 }
     
-.tagline { color: #77670D; }
+.tagline { color: var(--color-tagline) }
     
   a:focus-visible { 
   outline: 3px solid #1d4ed8;
@@ -53,8 +78,8 @@ body {
     top: -6.25rem;
     left: 0;
     z-index: 100;
-    background: #ffffff;
-    padding: 0.5rem 1rem;
+    background: var(--color-bg);
+    padding: var(--space-sm) var(--space-md);
    }
     .skip-link:focus { 
       top: 0; 
@@ -72,7 +97,7 @@ body {
      }
 
     .table > *{
-        border: 3px solid black;
+        border: 3px solid var(--color-border);
     }
     form {
       display: flex;
@@ -84,7 +109,7 @@ body {
     form div {
      display: flex;
     flex-direction: column;
-     gap: 0.5rem;
+     gap: var(--space-md);
 }
 
 img {
@@ -98,45 +123,48 @@ img {
 .h-navbar, .f-navbar {
   display: flex;
   list-style: none;
-  padding: 0.75rem 0;
+  padding: var(--space-sm) 0;
   flex-direction: column;
   justify-content: space-around;
   height: auto;
   align-items: center;
-  gap: 0.5rem 1rem;
+  gap: var(--space-sm) var(--space-md);
   cursor: pointer;
   transition: all 1s;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border);
   width: 100%;
 }
 
 li{
   
-  padding: 0.5em; 
+  padding: var(--space-sm); 
 }
 
 li a {
-  padding: 0.5em 2em;
+  padding: var(--space-sm) var(--space-lg);
   text-decoration: none; 
 }
 
 button { 
-  color: black;
-  background-color: white;
-  padding: 0.5em;
+  color: var(--color-button-text);
+  background-color: var(--color-button-bg);
+  padding: var(--space-sm);
   font-size: 1rem;
-  border-radius: 2.5px;
-  border: 0.5px solid black;
+  border-radius: var(--space-sm);
+  border: 0.5px solid var(--color-border);
   cursor: pointer;
   transition: all 1s;
-}
-button:hover, button:focus {
+
+  &:hover, &:focus {
   background-color: green;
-} 
-button:active {
+  } 
+  &:active {
   background-color: red; 
+  }
 }
+
+
 
 /* Main body information and styles for the cards  */
 
