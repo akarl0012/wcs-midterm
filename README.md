@@ -19,4 +19,5 @@ resizing.
 Week 11 Components and Styles: 
 - added a Root sequence to the CSS
 - added a Dark Mode to the CSS (took a long time)
-- going through and nesting button and card for website simplisity
+- going through and nesting button and card for website simplisity.
+- first pass on week 11 CSS, issues with Dark mode and overridden wrong text and backgrounds.

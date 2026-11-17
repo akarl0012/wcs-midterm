@@ -164,25 +164,31 @@ button {
   }
 }
 
-
-
 /* Main body information and styles for the cards  */
 
 .card {
+  --card-bg: var(--color-card-bg);
+  --card-text: var(--color-card-text);
+
   width: 100%;
   height: auto;
-  border-radius: 20px;
-  background-color: rgb(186, 163, 115);
-  padding: 0.5em; 
+  border-radius: var(--space-lg);
+  background-color: var(--color-card-bg);
+  color: var(--card-text);
+  padding: var(--space-sm); 
   transition: transform0.3s ease, box-shadow 0.3s ease;
+  
   &:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2)
  }
 }
-
+.card-highlight, .card--highlight {
+    --color-text: #121212;
+    --color-bg: #f0f0f0 ;
+}
 p {
-  padding: 1em;
+  padding: var(--space-md);
   font-size: 1.25rem;
   text-align: center;
 }
@@ -192,8 +198,8 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 1.5rem;
-  padding: 0 1rem;
+  gap: var(--space-lg);
+  padding: 0 var(--space-md);
 }
 
 /* Media Queries for the desktop and for larger phones and tablets  */
@@ -220,8 +226,8 @@ Trying again but keeping the OG code for refrence */
     .designs {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-      padding: 0 2.5rem;
+      gap: var(--space-lg);
+      padding: var(--space-xl);
     }
 
   .card {
