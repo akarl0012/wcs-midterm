@@ -170,8 +170,11 @@ button {
   --card-bg: var(--color-card-bg);
   --card-text: var(--color-card-text);
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: var(--space-lg);
   background-color: var(--color-card-bg);
   color: var(--card-text);
