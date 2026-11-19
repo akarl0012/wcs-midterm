@@ -21,3 +21,7 @@ Week 11 Components and Styles:
 - added a Dark Mode to the CSS (took a long time)
 - going through and nesting button and card for website simplisity.
 - first pass on week 11 CSS, issues with Dark mode and overridden wrong text and backgrounds.
+- added in the JSON script 
+- added the Open Graph tags to the main page + the Schema link
+- added the contextual links to two of the cards in the index/main page. 
+Issues with the card sizes after the contextual links and descriptions added. Need to fix in CSS. 
