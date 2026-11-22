@@ -8,7 +8,7 @@
   --color-text: #333333;
   --color-bg: white ;
   --color-tagline: #77670D;
-  --color-card-bg: rgb(186, 163, 115);
+  --color-card-bg: rgb(204, 182, 134);
   --color-card-text:#333333;
   --color-button-bg: #ffffff;
   --color-button-text: #000000;
@@ -69,7 +69,7 @@ body {
 .tagline { color: var(--color-tagline) }
     
   a:focus-visible { 
-  outline: 3px solid #1d4ed8;
+  outline: 3px solid #39c7f2;
   outline-offset: 3px; 
  }
     
@@ -188,7 +188,7 @@ button {
 }
 .card-highlight, .card--highlight {
     --card-bg: #ff02e5;
-    --card-text: #8f0808;
+    --card-text: #19e3f2;
     border: 3px solid #000000;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
