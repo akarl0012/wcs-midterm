@@ -25,3 +25,4 @@ Week 11 Components and Styles:
 - added the Open Graph tags to the main page + the Schema link
 - added the contextual links to two of the cards in the index/main page. 
 Issues with the card sizes after the contextual links and descriptions added. Need to fix in CSS. 
+added change to colour palette for lighthouse audit, accessibilty to text was biggest issue. 
