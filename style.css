@@ -188,7 +188,7 @@ button {
 }
 .card-highlight, .card--highlight {
     --card-bg: #ff02e5;
-    --card-text: #19e3f2;
+    --card-text: #0f0a65;
     border: 3px solid #000000;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
