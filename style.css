@@ -146,21 +146,27 @@ li a {
   text-decoration: none; 
 }
 
-button { 
+.nav-btn {
+  display: inline-block;
   color: var(--color-button-text);
   background-color: var(--color-button-bg);
-  padding: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
   font-size: 1rem;
+  text-decoration: none;
   border-radius: var(--space-sm);
   border: 0.5px solid var(--color-border);
   cursor: pointer;
-  transition: all 1s;
+  transition: background-color 0.25s ease, color 0.25s ease;
 
-  &:hover, &:focus {
-  background-color: green;
-  } 
+  &:hover,
+  &:focus-visible {
+    background-color: var(--color-focus);
+    color: #ffffff;
+  }
+
   &:active {
-  background-color: red; 
+    background-color: var(--color-tagline);
+    color: #ffffff;
   }
 }
 
