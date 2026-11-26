@@ -150,22 +150,23 @@ li a {
   display: inline-block;
   color: var(--color-button-text);
   background-color: var(--color-button-bg);
-  padding: var(--space-sm) var(--space-md);
+  padding: var(--space-sm);
   font-size: 1rem;
+  line-height: 1.6;
   text-decoration: none;
-  border-radius: var(--space-sm);
+  border-radius: var(--radius-sm, 2.5px);
   border: 0.5px solid var(--color-border);
   cursor: pointer;
-  transition: background-color 0.25s ease, color 0.25s ease;
-
+  transition: all 1s;
+  
   &:hover,
   &:focus-visible {
-    background-color: var(--color-focus);
+    background-color: Green;
     color: #ffffff;
   }
 
   &:active {
-    background-color: var(--color-tagline);
+    background-color: Red;
     color: #ffffff;
   }
 }
