@@ -241,14 +241,24 @@ li a {
     border: 3px solid #000000;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
-p {
-  padding: var(--space-md);
-  font-size: 1.25rem;
-  text-align: center;
+h1{
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  line-height: 1.2;
+  margin: var(--space-3) var(--space-3) var(--space-2);
 }
 
-.designs, .series, .Enviro, .chars, .paths, .employ  {
+p {
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  margin: 0;
+}
+
+ .card .product-description {
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+  }
+
+.designs, .series, .enviro, .chars, .paths, .employ  {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -285,9 +295,7 @@ Trying again but keeping the OG code for refrence */
       padding: var(--space-xl);
     }
 
-  .card {
-    width: 100%; 
-  }
+ 
 }
 
 /* Reduced motion guard block for animations  */
